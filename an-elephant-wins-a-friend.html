@@ -1,342 +1,211 @@
-<!doctype html>
-<html class="no-js" lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<title>Chasing a Rainbow</title>
-		<meta name="description" content="">
-		<meta name="author" content="Subu">
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Chasing a Rainbow (beta)</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html">Chasing a Rainbow (beta)</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="all_posts.html">All Post</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="categories.html">All Categories</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="tags.html">All Tags</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('assets/img/home-bg.jpg')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="site-heading">
+                            <h1></h1>
+                            <span class="subheading"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
 
-		<link rel="stylesheet" href="/theme/css/foundation.css" />
-		<link rel="stylesheet" href="/theme/css/pygment/colorful.css" />
-		<link rel="stylesheet" href="/theme/css/custom.css" />
-
-		<!-- GOOGLE WEB FONTS -->
-		<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Sans+Mono|Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="/theme/css/alt-fonts.css" />
-
-		<script src="/theme/js/modernizr.js"></script>
-
-		<!-- Feeds -->
-
-
-		<!-- mathjax config similar to math.stackexchange -->
-		<script type="text/x-mathjax-config">
-		MathJax.Hub.Config({
-			jax: ["input/TeX", "output/HTML-CSS"],
-			tex2jax: {
-				inlineMath: [ ['$', '$'] ],
-				displayMath: [ ['$$', '$$']],
-				processEscapes: true,
-				skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-			},
-			messageStyle: "none",
-			"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
-		});
-		</script>
-		<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-	</head>
-	<body>
-		<div class="off-canvas-wrap">
-			<div class="inner-wrap">
-				<!-- mobile top bar to activate nav -->
-				<nav class="tab-bar show-for-small">
-					<section class="left-small">
-						<a class="left-off-canvas-toggle menu-icon" ><span></span></a>
-					</section>
-
-					<section class="middle tab-bar-section">
-						<h1 class="title">Chasing&nbsp;a&nbsp;Rainbow</h1>
-					</section>
-				</nav>
-
-				<!-- mobile side bar nav -->
-				<aside class="left-off-canvas-menu">
-					<ul class="off-canvas-list">
-						<li><a href="">Home</a></li>
-						<li><label>Categories</label></li>
-							<li ><a href="/category/articles.html">articles</a></li>
-							<li ><a href="/category/finance.html">finance</a></li>
-							<li class="active"><a href="/category/poetry.html">poetry</a></li>
-							<li ><a href="/category/shorts.html">shorts</a></li>
-
-						<li><label>Links</label></li>
+                  
 
 
-						<li><label>Monthly Archives</label></li>
-									<li><a href="/posts/2022/Jan/index.html">January 2022 (1)</a></li>
-									<li><a href="/posts/2021/Dec/index.html">December 2021 (1)</a></li>
-									<li><a href="/posts/2021/Oct/index.html">October 2021 (1)</a></li>
-									<li><a href="/posts/2021/Sep/index.html">September 2021 (2)</a></li>
-									<li><a href="/posts/2021/Jul/index.html">July 2021 (1)</a></li>
-									<li><a href="/posts/2021/Jan/index.html">January 2021 (1)</a></li>
-									<li><a href="/posts/2020/Oct/index.html">October 2020 (1)</a></li>
-									<li><a href="/posts/2020/Sep/index.html">September 2020 (1)</a></li>
-									<li><a href="/posts/2020/Aug/index.html">August 2020 (1)</a></li>
-									<li><a href="/posts/2019/May/index.html">May 2019 (1)</a></li>
-									<li><a href="/posts/2016/Aug/index.html">August 2016 (1)</a></li>
-									<li><a href="/posts/2012/Aug/index.html">August 2012 (1)</a></li>
-									<li><a href="/posts/2012/Jan/index.html">January 2012 (1)</a></li>
-									<li><a href="/posts/2010/Oct/index.html">October 2010 (1)</a></li>
-									<li><a href="/posts/2009/Aug/index.html">August 2009 (1)</a></li>
-									<li><a href="/posts/2009/Jul/index.html">July 2009 (1)</a></li>
-									<li><a href="/posts/2007/Jun/index.html">June 2007 (1)</a></li>
-									<li><a href="/posts/2006/Mar/index.html">March 2006 (1)</a></li>
-									<li><a href="/posts/2004/Sep/index.html">September 2004 (1)</a></li>
+<!-- individual post -->
+<div class = "flex one demo">
 
-						<li><label>Social</label></li>
-							<li><a href="mailto:chasingarainbow@icloud.com">envelope</a></li>
-							<li><a href="https://twitter.com/omgitssubu">twitter</a></li>
-					</ul>	
-				</aside>
 
-				<!-- top bar nav -->
-				<nav class="top-bar hide-for-small-only" data-topbar>
-					<ul class="title-area">
-						<li class="name">
-							<h1><a href="/">Chasing a Rainbow</a></h1>
-						</li>
-					</ul>
+  
+  
+  <div class="card fluid">
+              
+  
+          
 
-					<section class="top-bar-section">
-						<ul class="left">
-								<li ><a href="/category/articles.html">articles</a></li>
-								<li ><a href="/category/finance.html">finance</a></li>
-								<li class="active"><a href="/category/poetry.html">poetry</a></li>
-								<li ><a href="/category/shorts.html">shorts</a></li>
-						</ul>
-                        <ul class="right">                                                                                                                                           
-                                                                                                          
-····                                                                                                                                       
-                                     <li><a href="/pages/about.html">about</a></li>                                    
-                                                                                                                                          
-                                                                                                                                             
-                        </ul>  
-					</section>
-				</nav>
+             
+              <div>
+                  <h3>An Elephant Wins a Friend</h3>
+                  <p class="post-meta">
+                    published on 2012-01-30 &nbsp;&nbsp; 2 minutes read
+                </p>
 
-				<!-- Main Page Content and Sidebar -->
-				<section class="main-section">
-					<div class="row">
-						<!-- Main Content -->
-						<div class="medium-9 small-12 columns" role="content">
-<article>
-	<h2>An Elephant Wins a Friend</h2>
-	<h6>summary: <p>based on a fictional story of friendship and now dedicated to elphant Kaavan</p></h6><hr/>
-	<blockquote>
-<p><em>the story</em></p>
+                  <figure>
+                    <img src="1.jpg" alt="Image description"/>
+                    <figcaption></figcaption>
+                </figure>
+                
+                  <p>
+                      <blockquote>
+  <p><em>the story</em></p>
 </blockquote>
+
 <p>Dedicating this writing from 2012 to Kaavan, the world's loneliest elephant as he goes free. Freedom is such a dear thing and loneliness is a disease that needs a cure. These beautful animals deserve much better treatment than what we provide.  </p>
+
 <p><a href="https://www.bbc.com/news/world-asia-55060433">Story of Kaavan</a></p>
-<hr>
-<p>A lonely baby elephant<br>
-Yearned for a friend one day<br>
-Walking through the jungles into a large city<br>
-She spotted a little girl pretty<br>
-Playing with a ball alone<br>
-Excited she walked closer with intent<br>
-to ask her, to be a friend, a lifelong friend<br>
-Seeing the elephant the frightened little girl screamed<br>
-her protective parents rushed out and grabbed her in<br>
-'elephant' 'elephant' they steamed<br>
-'elephant' 'run' they ran with a din<br>
+
+<hr />
+
+<p>A lonely baby elephant <br />
+Yearned for a friend one day <br />
+Walking through the jungles into a large city <br />
+She spotted a little girl pretty <br />
+Playing with a ball alone <br />
+Excited she walked closer with intent <br />
+to ask her, to be a friend, a lifelong friend <br />
+Seeing the elephant the frightened little girl screamed <br />
+her protective parents rushed out and grabbed her in <br />
+'elephant' 'elephant' they steamed <br />
+'elephant' 'run' they ran with a din <br />
 Home came the elephant dejected  </p>
-<p>On second day, still yearning to find a new friend<br>
-And again she walked to the city<br>
-And again she saw the little girl playing with the ball<br>
-Hidden she stood watching, making no call<br>
-The ball flew out, now our elephant swung into action<br>
-She kicked it back with pride in a time fraction<br>
-It bounced and bounced and bounced away<br>
-the little girl cried, her parents screamed all ash gray<br>
-in went the little girl<br>
+
+<p>On second day, still yearning to find a new friend <br />
+And again she walked to the city <br />
+And again she saw the little girl playing with the ball <br />
+Hidden she stood watching, making no call <br />
+The ball flew out, now our elephant swung into action <br />
+She kicked it back with pride in a time fraction <br />
+It bounced and bounced and bounced away <br />
+the little girl cried, her parents screamed all ash gray <br />
+in went the little girl <br />
 Home came the elephant dejected  </p>
-<p>Not the one to give up<br>
-Another bright day, she ventured out again<br>
-pausing at a stream to get a drink of water<br>
-Wonder of wonder! She found the little girl playing there<br>
-She sneaked from behind with little strain<br>
-Taking in a gallon of water in her trunk<br>
-She playfully drenched the little girl with the rain<br>
-The little girl danced in joy<br>
-And they played together<br>
-games unpretentious &amp; coy<br>
-Her parents saw this, they screamed 'elephant'<br>
-the brave little girl said 'no mommy'<br>
-'this elephant is my friend'<br>
-The little girl was not afraid anymore<br>
+
+<p>Not the one to give up <br />
+Another bright day, she ventured out again <br />
+pausing at a stream to get a drink of water <br />
+Wonder of wonder! She found the little girl playing there <br />
+She sneaked from behind with little strain <br />
+Taking in a gallon of water in her trunk <br />
+She playfully drenched the little girl with the rain <br />
+The little girl danced in joy <br />
+And they played together <br />
+games unpretentious &amp; coy <br />
+Her parents saw this, they screamed 'elephant' <br />
+the brave little girl said 'no mommy' <br />
+'this elephant is my friend' <br />
+The little girl was not afraid anymore <br />
 And the elephant had finally made a friend  </p>
-	<hr/>
-	<h6>Written by <a href="/author/subu.html">Subu</a> in <a href="/category/poetry.html">"poetry"</a> on Mon 30 January 2012. Tags: <a href="/tag/2012.html">2012</a>, <a href="/tag/jan.html">jan</a>, <a href="/tag/kaavan.html">kaavan</a>, <a href="/tag/cher.html">cher</a>, <a href="/tag/cartoons.html">cartoons</a>, <a href="/tag/fiction.html">fiction</a>, </h6>
-</article>
-
-						</div>
-						<!-- End Main Content -->
-						<!-- Sidebar -->
-						<aside class="medium-3 hide-for-small-only columns">
-						
-							<div class="panel">
-								<h5>Tags</h5>
-								<ul class="tag-cloud">
-									<li><a href="/tag/2009.html" class="tag-2009">2009											<span class="badge">(2)</span>
-</a></li>
-									<li><a href="/tag/lust.html" class="tag-lust">lust											<span class="badge">(1)</span>
-</a></li>
-									<li><a href="/tag/oct.html" class="tag-oct">oct											<span class="badge">(3)</span>
-</a></li>
-									<li><a href="/tag/time.html" class="tag-time">time											<span class="badge">(1)</span>
-</a></li>
-									<li><a href="/tag/lullaby.html" class="tag-lullaby">lullaby											<span class="badge">(1)</span>
-</a></li>
-									<li><a href="/tag/birthday.html" class="tag-birthday">birthday											<span class="badge">(2)</span>
-</a></li>
-									<li><a href="/tag/cartoons.html" class="tag-cartoons">cartoons											<span class="badge">(1)</span>
-</a></li>
-									<li><a href="/tag/2019.html" class="tag-2019">2019											<span class="badge">(1)</span>
-</a></li>
-									<li><a href="/tag/romance.html" class="tag-romance">romance											<span class="badge">(4)</span>
-</a></li>
-									<li><a href="/tag/2022.html" class="tag-2022">2022											<span class="badge">(1)</span>
-</a></li>
-									<li><a href="/tag/inspiration.html" class="tag-inspiration">inspiration											<span class="badge">(5)</span>
-</a></li>
-									<li><a href="/tag/fiction.html" class="tag-fiction">fiction											<span class="badge">(2)</span>
-</a></li>
-									<li><a href="/tag/jun.html" class="tag-jun">jun											<span class="badge">(1)</span>
-</a></li>
-									<li><a href="/tag/dec.html" class="tag-dec">dec											<span class="badge">(1)</span>
-</a></li>
-									<li><a href="/tag/pandemic.html" class="tag-pandemic">pandemic											<span class="badge">(1)</span>
-</a></li>
-									<li><a href="/tag/aug.html" class="tag-aug">aug											<span class="badge">(4)</span>
-</a></li>
-									<li><a href="/tag/flirt.html" class="tag-flirt">flirt											<span class="badge">(1)</span>
-</a></li>
-									<li><a href="/tag/obsession.html" class="tag-obsession">obsession											<span class="badge">(1)</span>
-</a></li>
-									<li><a href="/tag/virus.html" class="tag-virus">virus											<span class="badge">(1)</span>
-</a></li>
-									<li><a href="/tag/2020.html" class="tag-2020">2020											<span class="badge">(3)</span>
-</a></li>
-									<li><a href="/tag/sep.html" class="tag-sep">sep											<span class="badge">(4)</span>
-</a></li>
-									<li><a href="/tag/may.html" class="tag-may">may											<span class="badge">(1)</span>
-</a></li>
-									<li><a href="/tag/kids.html" class="tag-kids">kids											<span class="badge">(2)</span>
-</a></li>
-									<li><a href="/tag/hair.html" class="tag-hair">hair											<span class="badge">(1)</span>
-</a></li>
-									<li><a href="/tag/fun.html" class="tag-fun">fun											<span class="badge">(3)</span>
-</a></li>
-									<li><a href="/tag/2007.html" class="tag-2007">2007											<span class="badge">(1)</span>
-</a></li>
-									<li><a href="/tag/2016.html" class="tag-2016">2016											<span class="badge">(1)</span>
-</a></li>
-									<li><a href="/tag/life.html" class="tag-life">life											<span class="badge">(1)</span>
-</a></li>
-									<li><a href="/tag/cher.html" class="tag-cher">cher											<span class="badge">(1)</span>
-</a></li>
-									<li><a href="/tag/metro.html" class="tag-metro">metro											<span class="badge">(1)</span>
-</a></li>
-									<li><a href="/tag/jul.html" class="tag-jul">jul											<span class="badge">(2)</span>
-</a></li>
-									<li><a href="/tag/mar.html" class="tag-mar">mar											<span class="badge">(1)</span>
-</a></li>
-									<li><a href="/tag/jan.html" class="tag-jan">jan											<span class="badge">(3)</span>
-</a></li>
-									<li><a href="/tag/2021.html" class="tag-2021">2021											<span class="badge">(6)</span>
-</a></li>
-									<li><a href="/tag/2012.html" class="tag-2012">2012											<span class="badge">(2)</span>
-</a></li>
-									<li><a href="/tag/events.html" class="tag-events">events											<span class="badge">(5)</span>
-</a></li>
-									<li><a href="/tag/2004.html" class="tag-2004">2004											<span class="badge">(1)</span>
-</a></li>
-									<li><a href="/tag/rain.html" class="tag-rain">rain											<span class="badge">(1)</span>
-</a></li>
-									<li><a href="/tag/humor.html" class="tag-humor">humor											<span class="badge">(2)</span>
-</a></li>
-									<li><a href="/tag/mindfullness.html" class="tag-mindfullness">mindfullness											<span class="badge">(5)</span>
-</a></li>
-									<li><a href="/tag/imagination.html" class="tag-imagination">imagination											<span class="badge">(1)</span>
-</a></li>
-									<li><a href="/tag/farewell.html" class="tag-farewell">farewell											<span class="badge">(1)</span>
-</a></li>
-									<li><a href="/tag/2010.html" class="tag-2010">2010											<span class="badge">(1)</span>
-</a></li>
-									<li><a href="/tag/kaavan.html" class="tag-kaavan">kaavan											<span class="badge">(1)</span>
-</a></li>
-									<li><a href="/tag/finance.html" class="tag-finance">finance											<span class="badge">(1)</span>
-</a></li>
-									<li><a href="/tag/money.html" class="tag-money">money											<span class="badge">(1)</span>
-</a></li>
-									<li><a href="/tag/loneliness.html" class="tag-loneliness">loneliness											<span class="badge">(1)</span>
-</a></li>
-									<li><a href="/tag/corona-virus.html" class="tag-corona virus">corona virus											<span class="badge">(1)</span>
-</a></li>
-									<li><a href="/tag/2006.html" class="tag-2006">2006											<span class="badge">(1)</span>
-</a></li>
-									<li><a href="/tag/relationship.html" class="tag-relationship">relationship											<span class="badge">(6)</span>
-</a></li>
-								</ul>
-							</div>
 
 
+                  </p>
+                  <a class="button" href=""poetry".html">"poetry"</a>
+                  <br>
+                  
+                  
+                      <button class="mybutton"><a href=" cartoons.html"> cartoons</a></button>
+                  
+                      <button class="mybutton"><a href=" cher.html"> cher</a></button>
+                  
+                      <button class="mybutton"><a href=" fiction.html"> fiction</a></button>
+                  
+                      <button class="mybutton"><a href=" jan.html"> jan</a></button>
+                  
+                      <button class="mybutton"><a href=" kaavan.html"> kaavan</a></button>
+                  
+                      <button class="mybutton"><a href="2012.html">2012</a></button>
+                  
 
-							<div class="panel">
-								<h5>Monthly Archives</h5>
-								<ul class="side-nav">
-											<li><a href="/posts/2022/Jan/index.html">January 2022 (1)</a></li>
-											<li><a href="/posts/2021/Dec/index.html">December 2021 (1)</a></li>
-											<li><a href="/posts/2021/Oct/index.html">October 2021 (1)</a></li>
-											<li><a href="/posts/2021/Sep/index.html">September 2021 (2)</a></li>
-											<li><a href="/posts/2021/Jul/index.html">July 2021 (1)</a></li>
-											<li><a href="/posts/2021/Jan/index.html">January 2021 (1)</a></li>
-											<li><a href="/posts/2020/Oct/index.html">October 2020 (1)</a></li>
-											<li><a href="/posts/2020/Sep/index.html">September 2020 (1)</a></li>
-											<li><a href="/posts/2020/Aug/index.html">August 2020 (1)</a></li>
-											<li><a href="/posts/2019/May/index.html">May 2019 (1)</a></li>
-											<li><a href="/posts/2016/Aug/index.html">August 2016 (1)</a></li>
-											<li><a href="/posts/2012/Aug/index.html">August 2012 (1)</a></li>
-											<li><a href="/posts/2012/Jan/index.html">January 2012 (1)</a></li>
-											<li><a href="/posts/2010/Oct/index.html">October 2010 (1)</a></li>
-											<li><a href="/posts/2009/Aug/index.html">August 2009 (1)</a></li>
-											<li><a href="/posts/2009/Jul/index.html">July 2009 (1)</a></li>
-											<li><a href="/posts/2007/Jun/index.html">June 2007 (1)</a></li>
-											<li><a href="/posts/2006/Mar/index.html">March 2006 (1)</a></li>
-											<li><a href="/posts/2004/Sep/index.html">September 2004 (1)</a></li>
-								</ul>
-							</div>
+              </div>
+   
+  </div>
+  
+  
+  
 
-							<div class="panel">
-								<h5>Social</h5>
-								<ul class="side-nav">
-									<li><a href="mailto:chasingarainbow@icloud.com">envelope</a></li>
-									<li><a href="https://twitter.com/omgitssubu">twitter</a></li>
-								</ul>
-							</div>
-						</aside>
-						<!-- End Sidebar -->
-					</div>
 
-					<!-- Footer -->
-					<footer class="row">
-						<div class="medium-9 small-12">
-							<hr/>
-							<p class="text-center">all rights reserved <a href="http://www.lumosai.org">Lumos AI LLC</a> </p>
-						</div>
-					</footer>
-					<!-- End Footer -->
-				</section>
-				<a class="exit-off-canvas"></a>
-			</div><!--off-canvas inner-->
-		</div><!--off-canvas wrap-->
+</div>
 
-		<script src="/theme/js/jquery.js"></script>
-		<script src="/theme/js/foundation.min.js"></script>
-		<script>
-			$(document).foundation();
-		</script>
-	</body>
+                  
+                    <!-- Pager-->
+                    <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="all_posts.html">All Posts →</a></div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer-->
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <ul class="list-inline text-center">
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="small text-center text-muted fst-italic">copyright Lumos AI LLC 2022, all rights reserved </h3>&nbsp; &nbsp; questions: <a href="mailto:chasingarainbow@icloud.com?subject=Mail from our Website">Send Email to Subu</a>  &nbsp; &nbsp; last updated: Jan 2022</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="scripts.js"></script>
+    </body>
 </html>
