@@ -7,86 +7,146 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla+One|Libre+Baskerville">
   <title>Chasing a Rainbow (beta)</title>
 
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Add a gray background color with some padding */
+
+
+    body {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 16px;
+      padding: 20px;
+      background: #f1f1f1;
+    }
+
+    h1, h2, h3, h4, h5, h6, p {
+      font-family: 'Fjalla One', sans-serif;
+    }
+    /* Header/Blog Title */
+    .header {
+      padding: 30px;
+      font-size: 35px;
+      text-align: center;
+      background: white;
+    }
+
+    /* Create two unequal columns that floats next to each other */
+    /* Left column */
+    .leftcolumn {
+      float: left;
+      width: 75%;
+    }
+
+    /* Right column */
+    .rightcolumn {
+      float: left;
+      width: 25%;
+      padding-left: 20px;
+    }
+
+    /* Fake image */
+    .fakeimg {
+      background-color: #aaa;
+      width: 100%;
+      padding: 20px;
+    }
+
+    /* Add a card effect for articles */
+    .card {
+      background-color: white;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Footer */
+    .footer {
+
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+      background: #ddd;
+    }
+
+    /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 800px) {
+
+      .leftcolumn,
+      .rightcolumn {
+        width: 100%;
+        padding: 0;
+      }
+    }
+  </style>
 
 </head>
 
 <body>
 
-  <!-- the main container with two dummy columns-->
-  <section class="section">
-    <div class="columns is-mobile is-centered">
-      <div class="column"></div>
-      <div class="column is-10">
+  <!-- the heading -->
 
-        <!-- the heading -->
-        <section class="hero is-primary">
+  <div class="header">
+    <h1> Chasing a Rainbow (beta)</h1>
+    <h3>viewing life with a biased lens</h3>
+  </div>
 
-          <div class="hero-body">
-            <p class="title is-size-3">
-              Chasing a Rainbow (beta)
-            </p>
-            <p class="subtitle">
-              viewing life with a biased lens
-            </p>
-          </div>
 
-        </section>
+  <!-- navigation-->
+  <div class="w3-bar w3-black text-align-right">
+    
 
-        <section class="section">
+    <a href="https://dvader2021.github.io/tech.html" class="w3-bar-item w3-button">technology</a> &nbsp;
+    
 
-          <!-- the breadcrumb-->
-          <div class="navbar-menu">
-            <div class="navbar-start">
-              
-              <nav class="breadcrumb has-arrow-separator" aria-label="breadcrumbs">
-                <ul>
-                  <li><a href="https://dvader2021.github.io">Home</a></li>
-                </ul>
-              </nav>
-            
+    <a href="https://dvader2021.github.io/faq.html" class="w3-bar-item w3-button">faq</a> &nbsp;
+    
 
-            </div>
-            <!-- the nav menu -->
-            <div class="navbar-end">
+    <a href="https://dvader2021.github.io/about.html" class="w3-bar-item w3-button">about</a> &nbsp;
+    
 
-              
-                <a class="navbar-item" href="https://dvader2021.github.io/tech.html" role="button">technology</a>
-              
-                <a class="navbar-item" href="https://dvader2021.github.io/faq.html" role="button">faq</a>
-              
-                <a class="navbar-item" href="https://dvader2021.github.io/about.html" role="button">about</a>
-              
-                <a class="navbar-item" href="https://dvader2021.github.io/articles.html" role="button">articles</a>
-              
-                <a class="navbar-item" href="https://dvader2021.github.io/shorts.html" role="button">shorts</a>
-              
-                <a class="navbar-item" href="https://dvader2021.github.io/finance.html" role="button">finance</a>
-              
-                <a class="navbar-item" href="https://dvader2021.github.io/poetry.html" role="button">poetry</a>
-              
+    <a href="https://dvader2021.github.io/articles.html" class="w3-bar-item w3-button">articles</a> &nbsp;
+    
 
-            </div>
-          </div>
-        </section>
+    <a href="https://dvader2021.github.io/shorts.html" class="w3-bar-item w3-button">shorts</a> &nbsp;
+    
 
-        <!-- three columns with the main content in the central column-->
-        <section class="section">
+    <a href="https://dvader2021.github.io/finance.html" class="w3-bar-item w3-button">finance</a> &nbsp;
+    
 
-          <div class="tile is-ancestor">
-            
+    <a href="https://dvader2021.github.io/poetry.html" class="w3-bar-item w3-button">poetry</a> &nbsp;
+    
+
+  </div>
+
+
+  <div class="row">
+    <div class="leftcolumn">
+      
 
 
 <!-- individual post -->
 
 
-<div class="tile is-child box">
+<div class="card">
 
-  <p class="title is-2 is-family-monospace">Desire</p>
+  <h2>Desire</h2>
 
-  <p class="tag is-rounded">1 minute read &nbsp; published 2004-09-08</p>
+  <p class="w3-small">1 minute read &nbsp; published 2004-09-08</p>
 
 
   <!-- below is the image tag.. To be done
@@ -96,7 +156,7 @@
   </figure>
   -->
 
-  <div class="content has-text-justified is-family-monospace">
+  <p class="w3-large">
 
     <p>With desire in her eyes, <br />
 she feasted on him <br />
@@ -122,37 +182,37 @@ As the train left the platform, <br />
 She laughed with desire in her eyes  </p>
 
 
-  </div>
+  </p>
+
+  <hr />
+
+  <span class="w3-tag">
+    <a href="poetry.html" class="button is-ghost">poetry</a>
+  </span>
 
   
-  <div class="tags is-rounded">
-    <span class="tag is-rounded">
-      <a href="poetry.html" class="button is-ghost">poetry</a>
-    </span>
+  
+  <span class="w3-tag">
+    <a href=" 2004.html" class="button is-ghost"> 2004</a>
+  </span>
+  
+  <span class="w3-tag">
+    <a href=" flirt.html" class="button is-ghost"> flirt</a>
+  </span>
+  
+  <span class="w3-tag">
+    <a href=" fun.html" class="button is-ghost"> fun</a>
+  </span>
+  
+  <span class="w3-tag">
+    <a href=" metro.html" class="button is-ghost"> metro</a>
+  </span>
+  
+  <span class="w3-tag">
+    <a href="sep.html" class="button is-ghost">sep</a>
+  </span>
+  
 
-    
-    
-    <span class="tag is-rounded">
-      <a href=" 2004.html" class="button is-ghost"> 2004</a>
-    </span>
-    
-    <span class="tag is-rounded">
-      <a href=" flirt.html" class="button is-ghost"> flirt</a>
-    </span>
-    
-    <span class="tag is-rounded">
-      <a href=" fun.html" class="button is-ghost"> fun</a>
-    </span>
-    
-    <span class="tag is-rounded">
-      <a href=" metro.html" class="button is-ghost"> metro</a>
-    </span>
-    
-    <span class="tag is-rounded">
-      <a href="sep.html" class="button is-ghost">sep</a>
-    </span>
-    
-  </div>
 
 
 
@@ -162,268 +222,254 @@ She laughed with desire in her eyes  </p>
 
 
 
-          </div>
+    </div>
 
-        </section>
 
-        <!-- three columns with categories / tags / links -->
-        <section class="section">
-          <div class="columns is-mobile is-centered">
-            <div class="column">
-              All Categories
-              <div class="tags is-rounded">
-                
-                <span class="tag is-rounded">
-                    <a href="https://dvader2021.github.io/articles.html" class="button is-ghost">articles</a>
-                </span>
-                
-                <span class="tag is-rounded">
-                    <a href="https://dvader2021.github.io/shorts.html" class="button is-ghost">shorts</a>
-                </span>
-                
-                <span class="tag is-rounded">
-                    <a href="https://dvader2021.github.io/finance.html" class="button is-ghost">finance</a>
-                </span>
-                
-                <span class="tag is-rounded">
-                    <a href="https://dvader2021.github.io/poetry.html" class="button is-ghost">poetry</a>
-                </span>
-                
-              </div>
+    <div class="rightcolumn">
+     
+      <div class="card">
+        <h3>All Categories</h3>
 
-            </div>
-            <div class="column">
-              <a href="https://dvader2021.github.io/all_posts.html">All Articles</a>
-            </div>
-            <div class="column">
-              
-              All Tags
-              <div class="tags is-rounded">
-                
-                <span class="tag is-rounded">
-                    <a href="https://dvader2021.github.io/virus.html" class="button is-ghost">virus</a>
-                </span>
-                
-                <span class="tag is-rounded">
-                    <a href="https://dvader2021.github.io/jan.html" class="button is-ghost">jan</a>
-                </span>
-                
-                <span class="tag is-rounded">
-                    <a href="https://dvader2021.github.io/2022.html" class="button is-ghost">2022</a>
-                </span>
-                
-                <span class="tag is-rounded">
-                    <a href="https://dvader2021.github.io/events.html" class="button is-ghost">events</a>
-                </span>
-                
-                <span class="tag is-rounded">
-                    <a href="https://dvader2021.github.io/humor.html" class="button is-ghost">humor</a>
-                </span>
-                
-                <span class="tag is-rounded">
-                    <a href="https://dvader2021.github.io/mindfullness.html" class="button is-ghost">mindfullness</a>
-                </span>
-                
-                <span class="tag is-rounded">
-                    <a href="https://dvader2021.github.io/dec.html" class="button is-ghost">dec</a>
-                </span>
-                
-                <span class="tag is-rounded">
-                    <a href="https://dvader2021.github.io/2021.html" class="button is-ghost">2021</a>
-                </span>
-                
-                <span class="tag is-rounded">
-                    <a href="https://dvader2021.github.io/inspiration.html" class="button is-ghost">inspiration</a>
-                </span>
-                
-                <span class="tag is-rounded">
-                    <a href="https://dvader2021.github.io/oct.html" class="button is-ghost">oct</a>
-                </span>
-                
-                <span class="tag is-rounded">
-                    <a href="https://dvader2021.github.io/relationship.html" class="button is-ghost">relationship</a>
-                </span>
-                
-                <span class="tag is-rounded">
-                    <a href="https://dvader2021.github.io/sep.html" class="button is-ghost">sep</a>
-                </span>
-                
-                <span class="tag is-rounded">
-                    <a href="https://dvader2021.github.io/jul.html" class="button is-ghost">jul</a>
-                </span>
-                
-                <span class="tag is-rounded">
-                    <a href="https://dvader2021.github.io/money.html" class="button is-ghost">money</a>
-                </span>
-                
-                <span class="tag is-rounded">
-                    <a href="https://dvader2021.github.io/time.html" class="button is-ghost">time</a>
-                </span>
-                
-                <span class="tag is-rounded">
-                    <a href="https://dvader2021.github.io/finance.html" class="button is-ghost">finance</a>
-                </span>
-                
-                <span class="tag is-rounded">
-                    <a href="https://dvader2021.github.io/romance.html" class="button is-ghost">romance</a>
-                </span>
-                
-                <span class="tag is-rounded">
-                    <a href="https://dvader2021.github.io/2020.html" class="button is-ghost">2020</a>
-                </span>
-                
-                <span class="tag is-rounded">
-                    <a href="https://dvader2021.github.io/fiction.html" class="button is-ghost">fiction</a>
-                </span>
-                
-                <span class="tag is-rounded">
-                    <a href="https://dvader2021.github.io/birthday.html" class="button is-ghost">birthday</a>
-                </span>
-                
-                <span class="tag is-rounded">
-                    <a href="https://dvader2021.github.io/farewell.html" class="button is-ghost">farewell</a>
-                </span>
-                
-                <span class="tag is-rounded">
-                    <a href="https://dvader2021.github.io/aug.html" class="button is-ghost">aug</a>
-                </span>
-                
-                <span class="tag is-rounded">
-                    <a href="https://dvader2021.github.io/corona.html" class="button is-ghost">corona</a>
-                </span>
-                
-                <span class="tag is-rounded">
-                    <a href="https://dvader2021.github.io/pandemic.html" class="button is-ghost">pandemic</a>
-                </span>
-                
-                <span class="tag is-rounded">
-                    <a href="https://dvader2021.github.io/may.html" class="button is-ghost">may</a>
-                </span>
-                
-                <span class="tag is-rounded">
-                    <a href="https://dvader2021.github.io/2019.html" class="button is-ghost">2019</a>
-                </span>
-                
-                <span class="tag is-rounded">
-                    <a href="https://dvader2021.github.io/2016.html" class="button is-ghost">2016</a>
-                </span>
-                
-                <span class="tag is-rounded">
-                    <a href="https://dvader2021.github.io/life.html" class="button is-ghost">life</a>
-                </span>
-                
-                <span class="tag is-rounded">
-                    <a href="https://dvader2021.github.io/2012.html" class="button is-ghost">2012</a>
-                </span>
-                
-                <span class="tag is-rounded">
-                    <a href="https://dvader2021.github.io/hair.html" class="button is-ghost">hair</a>
-                </span>
-                
-                <span class="tag is-rounded">
-                    <a href="https://dvader2021.github.io/loneliness.html" class="button is-ghost">loneliness</a>
-                </span>
-                
-                <span class="tag is-rounded">
-                    <a href="https://dvader2021.github.io/kaavan.html" class="button is-ghost">kaavan</a>
-                </span>
-                
-                <span class="tag is-rounded">
-                    <a href="https://dvader2021.github.io/cher.html" class="button is-ghost">cher</a>
-                </span>
-                
-                <span class="tag is-rounded">
-                    <a href="https://dvader2021.github.io/cartoons.html" class="button is-ghost">cartoons</a>
-                </span>
-                
-                <span class="tag is-rounded">
-                    <a href="https://dvader2021.github.io/2010.html" class="button is-ghost">2010</a>
-                </span>
-                
-                <span class="tag is-rounded">
-                    <a href="https://dvader2021.github.io/kids.html" class="button is-ghost">kids</a>
-                </span>
-                
-                <span class="tag is-rounded">
-                    <a href="https://dvader2021.github.io/rain.html" class="button is-ghost">rain</a>
-                </span>
-                
-                <span class="tag is-rounded">
-                    <a href="https://dvader2021.github.io/2009.html" class="button is-ghost">2009</a>
-                </span>
-                
-                <span class="tag is-rounded">
-                    <a href="https://dvader2021.github.io/obsession.html" class="button is-ghost">obsession</a>
-                </span>
-                
-                <span class="tag is-rounded">
-                    <a href="https://dvader2021.github.io/lust.html" class="button is-ghost">lust</a>
-                </span>
-                
-                <span class="tag is-rounded">
-                    <a href="https://dvader2021.github.io/2007.html" class="button is-ghost">2007</a>
-                </span>
-                
-                <span class="tag is-rounded">
-                    <a href="https://dvader2021.github.io/fun.html" class="button is-ghost">fun</a>
-                </span>
-                
-                <span class="tag is-rounded">
-                    <a href="https://dvader2021.github.io/lullaby.html" class="button is-ghost">lullaby</a>
-                </span>
-                
-                <span class="tag is-rounded">
-                    <a href="https://dvader2021.github.io/jun.html" class="button is-ghost">jun</a>
-                </span>
-                
-                <span class="tag is-rounded">
-                    <a href="https://dvader2021.github.io/imagination.html" class="button is-ghost">imagination</a>
-                </span>
-                
-                <span class="tag is-rounded">
-                    <a href="https://dvader2021.github.io/2006.html" class="button is-ghost">2006</a>
-                </span>
-                
-                <span class="tag is-rounded">
-                    <a href="https://dvader2021.github.io/mar.html" class="button is-ghost">mar</a>
-                </span>
-                
-                <span class="tag is-rounded">
-                    <a href="https://dvader2021.github.io/2004.html" class="button is-ghost">2004</a>
-                </span>
-                
-                <span class="tag is-rounded">
-                    <a href="https://dvader2021.github.io/flirt.html" class="button is-ghost">flirt</a>
-                </span>
-                
-                <span class="tag is-rounded">
-                    <a href="https://dvader2021.github.io/metro.html" class="button is-ghost">metro</a>
-                </span>
-                
-              </div>
-
-            </div>
-          </div>
-        </section>
-
-        <!-- footer goes here -->
-
-        <footer class="footer">
-          <div class="content has-text-centered">
-            <p>
-              copyright Lumos AI LLC 2022, all rights reserved </h3>&nbsp; &nbsp; <a
-                href="mailto:chasingarainbow@icloud.com?subject=Mail from our Website">send comments and questions to Subu</a> &nbsp; &nbsp; version 0.8 &nbsp; last updated: Jan 2022
-            </p>
-          </div>
-        </footer>
+        
+        <span class="w3-tag">
+          <a href="https://dvader2021.github.io/articles.html" class="button is-ghost">articles</a>
+        </span>
+        
+        <span class="w3-tag">
+          <a href="https://dvader2021.github.io/shorts.html" class="button is-ghost">shorts</a>
+        </span>
+        
+        <span class="w3-tag">
+          <a href="https://dvader2021.github.io/finance.html" class="button is-ghost">finance</a>
+        </span>
+        
+        <span class="w3-tag">
+          <a href="https://dvader2021.github.io/poetry.html" class="button is-ghost">poetry</a>
+        </span>
+        
 
       </div>
+      <div class="card">
+        <h3>All Tags</h3>
+        
+        <span class="w3-tag">
+          <a href="https://dvader2021.github.io/virus.html" class="button is-ghost">virus</a>
+        </span>
+        
+        <span class="w3-tag">
+          <a href="https://dvader2021.github.io/jan.html" class="button is-ghost">jan</a>
+        </span>
+        
+        <span class="w3-tag">
+          <a href="https://dvader2021.github.io/2022.html" class="button is-ghost">2022</a>
+        </span>
+        
+        <span class="w3-tag">
+          <a href="https://dvader2021.github.io/events.html" class="button is-ghost">events</a>
+        </span>
+        
+        <span class="w3-tag">
+          <a href="https://dvader2021.github.io/humor.html" class="button is-ghost">humor</a>
+        </span>
+        
+        <span class="w3-tag">
+          <a href="https://dvader2021.github.io/mindfullness.html" class="button is-ghost">mindfullness</a>
+        </span>
+        
+        <span class="w3-tag">
+          <a href="https://dvader2021.github.io/dec.html" class="button is-ghost">dec</a>
+        </span>
+        
+        <span class="w3-tag">
+          <a href="https://dvader2021.github.io/2021.html" class="button is-ghost">2021</a>
+        </span>
+        
+        <span class="w3-tag">
+          <a href="https://dvader2021.github.io/inspiration.html" class="button is-ghost">inspiration</a>
+        </span>
+        
+        <span class="w3-tag">
+          <a href="https://dvader2021.github.io/oct.html" class="button is-ghost">oct</a>
+        </span>
+        
+        <span class="w3-tag">
+          <a href="https://dvader2021.github.io/relationship.html" class="button is-ghost">relationship</a>
+        </span>
+        
+        <span class="w3-tag">
+          <a href="https://dvader2021.github.io/sep.html" class="button is-ghost">sep</a>
+        </span>
+        
+        <span class="w3-tag">
+          <a href="https://dvader2021.github.io/jul.html" class="button is-ghost">jul</a>
+        </span>
+        
+        <span class="w3-tag">
+          <a href="https://dvader2021.github.io/money.html" class="button is-ghost">money</a>
+        </span>
+        
+        <span class="w3-tag">
+          <a href="https://dvader2021.github.io/time.html" class="button is-ghost">time</a>
+        </span>
+        
+        <span class="w3-tag">
+          <a href="https://dvader2021.github.io/finance.html" class="button is-ghost">finance</a>
+        </span>
+        
+        <span class="w3-tag">
+          <a href="https://dvader2021.github.io/romance.html" class="button is-ghost">romance</a>
+        </span>
+        
+        <span class="w3-tag">
+          <a href="https://dvader2021.github.io/2020.html" class="button is-ghost">2020</a>
+        </span>
+        
+        <span class="w3-tag">
+          <a href="https://dvader2021.github.io/fiction.html" class="button is-ghost">fiction</a>
+        </span>
+        
+        <span class="w3-tag">
+          <a href="https://dvader2021.github.io/birthday.html" class="button is-ghost">birthday</a>
+        </span>
+        
+        <span class="w3-tag">
+          <a href="https://dvader2021.github.io/farewell.html" class="button is-ghost">farewell</a>
+        </span>
+        
+        <span class="w3-tag">
+          <a href="https://dvader2021.github.io/aug.html" class="button is-ghost">aug</a>
+        </span>
+        
+        <span class="w3-tag">
+          <a href="https://dvader2021.github.io/corona.html" class="button is-ghost">corona</a>
+        </span>
+        
+        <span class="w3-tag">
+          <a href="https://dvader2021.github.io/pandemic.html" class="button is-ghost">pandemic</a>
+        </span>
+        
+        <span class="w3-tag">
+          <a href="https://dvader2021.github.io/may.html" class="button is-ghost">may</a>
+        </span>
+        
+        <span class="w3-tag">
+          <a href="https://dvader2021.github.io/2019.html" class="button is-ghost">2019</a>
+        </span>
+        
+        <span class="w3-tag">
+          <a href="https://dvader2021.github.io/2016.html" class="button is-ghost">2016</a>
+        </span>
+        
+        <span class="w3-tag">
+          <a href="https://dvader2021.github.io/life.html" class="button is-ghost">life</a>
+        </span>
+        
+        <span class="w3-tag">
+          <a href="https://dvader2021.github.io/2012.html" class="button is-ghost">2012</a>
+        </span>
+        
+        <span class="w3-tag">
+          <a href="https://dvader2021.github.io/hair.html" class="button is-ghost">hair</a>
+        </span>
+        
+        <span class="w3-tag">
+          <a href="https://dvader2021.github.io/loneliness.html" class="button is-ghost">loneliness</a>
+        </span>
+        
+        <span class="w3-tag">
+          <a href="https://dvader2021.github.io/kaavan.html" class="button is-ghost">kaavan</a>
+        </span>
+        
+        <span class="w3-tag">
+          <a href="https://dvader2021.github.io/cher.html" class="button is-ghost">cher</a>
+        </span>
+        
+        <span class="w3-tag">
+          <a href="https://dvader2021.github.io/cartoons.html" class="button is-ghost">cartoons</a>
+        </span>
+        
+        <span class="w3-tag">
+          <a href="https://dvader2021.github.io/2010.html" class="button is-ghost">2010</a>
+        </span>
+        
+        <span class="w3-tag">
+          <a href="https://dvader2021.github.io/kids.html" class="button is-ghost">kids</a>
+        </span>
+        
+        <span class="w3-tag">
+          <a href="https://dvader2021.github.io/rain.html" class="button is-ghost">rain</a>
+        </span>
+        
+        <span class="w3-tag">
+          <a href="https://dvader2021.github.io/2009.html" class="button is-ghost">2009</a>
+        </span>
+        
+        <span class="w3-tag">
+          <a href="https://dvader2021.github.io/obsession.html" class="button is-ghost">obsession</a>
+        </span>
+        
+        <span class="w3-tag">
+          <a href="https://dvader2021.github.io/lust.html" class="button is-ghost">lust</a>
+        </span>
+        
+        <span class="w3-tag">
+          <a href="https://dvader2021.github.io/2007.html" class="button is-ghost">2007</a>
+        </span>
+        
+        <span class="w3-tag">
+          <a href="https://dvader2021.github.io/fun.html" class="button is-ghost">fun</a>
+        </span>
+        
+        <span class="w3-tag">
+          <a href="https://dvader2021.github.io/lullaby.html" class="button is-ghost">lullaby</a>
+        </span>
+        
+        <span class="w3-tag">
+          <a href="https://dvader2021.github.io/jun.html" class="button is-ghost">jun</a>
+        </span>
+        
+        <span class="w3-tag">
+          <a href="https://dvader2021.github.io/imagination.html" class="button is-ghost">imagination</a>
+        </span>
+        
+        <span class="w3-tag">
+          <a href="https://dvader2021.github.io/2006.html" class="button is-ghost">2006</a>
+        </span>
+        
+        <span class="w3-tag">
+          <a href="https://dvader2021.github.io/mar.html" class="button is-ghost">mar</a>
+        </span>
+        
+        <span class="w3-tag">
+          <a href="https://dvader2021.github.io/2004.html" class="button is-ghost">2004</a>
+        </span>
+        
+        <span class="w3-tag">
+          <a href="https://dvader2021.github.io/flirt.html" class="button is-ghost">flirt</a>
+        </span>
+        
+        <span class="w3-tag">
+          <a href="https://dvader2021.github.io/metro.html" class="button is-ghost">metro</a>
+        </span>
+        
+      </div>
 
-      <div class="column"></div>
+      <div class="card">
+        <h3>Follow Me</h3>
+        <p>Twitter..</p>
+      </div>
     </div>
-  </section>
 
+  </div>
 
+  <div class="footer">
+   
+      <p class="w3-small">
+        copyright Lumos AI LLC 2022, all rights reserved </h3>&nbsp; &nbsp; <a
+          href="mailto:chasingarainbow@icloud.com?subject=Mail from our Website">send comments and questions to Subu</a> &nbsp; &nbsp; version 0.9 &nbsp; last updated: Jan 2022
+      </p>
+   
+  </div>
 
 
 </body>
