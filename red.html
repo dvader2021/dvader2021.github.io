@@ -11,9 +11,11 @@
   <meta name="keywords" content="rainbow static web site poetry articles humor">
   <meta name="author" content="Subu">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com"> 
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Libre+Baskerville&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Libre+Baskerville&family=Shadows+Into+Light&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="canonical" href="https://www.chasingarainbow.org/">
   <title>Chasing a Rainbow</title>
@@ -27,27 +29,27 @@
 
 
     body {
-      font-family: 'Caveat',  cursive, 'Libre Baskerville',  'Shadows Into Light' ;
+      font-family: 'Caveat', cursive, 'Libre Baskerville', 'Shadows Into Light';
       font-size: 36px;
       padding: 20px;
       background: #f1f1f1;
     }
 
-    
+
     h1 {
 
       font-family: 'Shadows Into Light';
-      font-size:40px;
-      font-weight:700;
-      text-transform:uppercase;
-    
+      font-size: 40px;
+      font-weight: 700;
+      text-transform: uppercase;
+
     }
 
     h2,
     h3 {
       font-family: 'Shadows Into Light';
     }
-    
+
     h4,
     h5,
     h6 {
@@ -118,6 +120,18 @@
       font-style: italic;
     }
 
+    div.polaroid {
+      
+      background-color: white;
+
+    }
+
+    div.container {
+      text-align: center;
+      padding: 10px 20px;
+    }
+
+
     /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
     @media screen and (max-width: 800px) {
 
@@ -135,7 +149,7 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-0YB7DGKDEW"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){window.dataLayer.push(arguments);}
+  function gtag() { window.dataLayer.push(arguments); }
   gtag('js', new Date());
 
   gtag('config', 'G-0YB7DGKDEW');
@@ -146,15 +160,15 @@
   <!-- NAVIGATION -->
   <div class="w3-top">
     <div class="w3-bar w3-black">
-      <span class="branding w3-bar-item w3-mobile">Chasing a Rainbow</span>
+      <i class="fa fa-home"></i><span class="branding w3-bar-item w3-mobile">Chasing a Rainbow</span>
       <span class="w3-right w3-mobile">
         
         <a href="https://www.chasingarainbow.org/whatsnew.html" class="w3-bar-item w3-button w3-mobile w3-hover-red">what's new</a> &nbsp;
-      
+        
         <a href="https://www.chasingarainbow.org/about.html" class="w3-bar-item w3-button w3-mobile w3-hover-red">about</a> &nbsp;
-      
+        
         <a href="https://www.chasingarainbow.org/index.html" class="w3-bar-item w3-button w3-mobile w3-hover-red">home</a> &nbsp;
-      
+        
       </span>
     </div>
   </div>
@@ -167,7 +181,7 @@
     </div>
   </section>
 
-  <div>
+  <div class="w3-container w3-center">
 
     
 
@@ -186,7 +200,7 @@
     <div class="w3-container">
       <div class="w3-row-padding">
         <div class="w3-col m5">
-          <img src="assets/us-unsplash.jpg" class="w3-round" alt="Us" width="300" height="300">
+          <img src="assets/us-unsplash.jpg" class="w3-round" alt="Us" style="width:100%;max-width:300px; height:100%; max-height:300px;">
           
         </div>
         <div class="w3-col m7">
@@ -243,7 +257,7 @@
     <div class="w3-container">
       <div class="w3-row-padding">
         <div class="w3-col m5">
-          <img src="assets/no_image.jpeg" class="w3-round" alt="Darkness" width="300" height="300">
+          <img src="assets/no_image.jpeg" class="w3-round" alt="Darkness" style="width:100%;max-width:300px; height:100%; max-height:300px;">
           
         </div>
         <div class="w3-col m7">
@@ -300,7 +314,7 @@
     <div class="w3-container">
       <div class="w3-row-padding">
         <div class="w3-col m5">
-          <img src="assets/no_image.jpeg" class="w3-round" alt="Corona Virus - A Love Story" width="300" height="300">
+          <img src="assets/no_image.jpeg" class="w3-round" alt="Corona Virus - A Love Story" style="width:100%;max-width:300px; height:100%; max-height:300px;">
           
         </div>
         <div class="w3-col m7">
@@ -361,7 +375,7 @@
     <div class="w3-container">
       <div class="w3-row-padding">
         <div class="w3-col m5">
-          <img src="assets/she-unsplash.jpg" class="w3-round" alt="She - analyzing a relationship" width="300" height="300">
+          <img src="assets/she-unsplash.jpg" class="w3-round" alt="She - analyzing a relationship" style="width:100%;max-width:300px; height:100%; max-height:300px;">
           
         </div>
         <div class="w3-col m7">
@@ -422,7 +436,7 @@
     <div class="w3-container">
       <div class="w3-row-padding">
         <div class="w3-col m5">
-          <img src="assets/no_image.jpeg" class="w3-round" alt="Goodbye Dear" width="300" height="300">
+          <img src="assets/no_image.jpeg" class="w3-round" alt="Goodbye Dear" style="width:100%;max-width:300px; height:100%; max-height:300px;">
           
         </div>
         <div class="w3-col m7">
@@ -491,7 +505,7 @@
     <div class="w3-container">
       <div class="w3-row-padding">
         <div class="w3-col m5">
-          <img src="assets/no_image.jpeg" class="w3-round" alt="Loneliness" width="300" height="300">
+          <img src="assets/no_image.jpeg" class="w3-round" alt="Loneliness" style="width:100%;max-width:300px; height:100%; max-height:300px;">
           
         </div>
         <div class="w3-col m7">
@@ -576,14 +590,14 @@
 
 
   <!-- Tags / categories -->
-  <section  class="section w3-red w3-hover-opacity">
+  <section class="section w3-red w3-hover-opacity">
     <div class="w3-container w3-center">
       <h1 class="w3-text-shadow"></h1>
     </div>
   </section>
 
   <!-- SERVICES -->
-  <section class="section w3-light-grey">
+  <section class="section w3-light-grey w3-center">
     <div class="w3-container w3-center">
       <div class="w3-row">
         
@@ -591,332 +605,335 @@
           <i class="fa fa-search w3-red w3-padding-small w3-round-xlarge"></i>
           <h3>All Categories</h3>
           <p> <span class="w3-bar">
-            
-  
-            <a href="https://www.chasingarainbow.org/yellow.html" class="w3-bar-item w3-button w3-round w3-hover-red">yellow</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/red.html" class="w3-bar-item w3-button w3-round w3-hover-red">red</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/white.html" class="w3-bar-item w3-button w3-round w3-hover-red">white</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/green.html" class="w3-bar-item w3-button w3-round w3-hover-red">green</a>
-  
-            
-          </span></p>
+              
+
+              <a href="https://www.chasingarainbow.org/yellow.html" class="w3-bar-item w3-button w3-round w3-hover-red">yellow</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/red.html" class="w3-bar-item w3-button w3-round w3-hover-red">red</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/white.html" class="w3-bar-item w3-button w3-round w3-hover-red">white</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/green.html" class="w3-bar-item w3-button w3-round w3-hover-red">green</a>
+
+              
+            </span></p>
         </div>
         
-        
+
         <div class="w3-col m3 l3">
           <i class="fa fa-tags w3-red w3-padding-small w3-round-xlarge"></i>
           <h3>All Tags</h3>
           <p><span class="w3-bar">
-            
-  
-            <a href="https://www.chasingarainbow.org/virus.html" class="w3-bar-item w3-button w3-round w3-hover-red">virus</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/value.html" class="w3-bar-item w3-button w3-round w3-hover-red">value</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/time.html" class="w3-bar-item w3-button w3-round w3-hover-red">time</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/sep.html" class="w3-bar-item w3-button w3-round w3-hover-red">sep</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/self-realization.html" class="w3-bar-item w3-button w3-round w3-hover-red">self-realization</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/romance.html" class="w3-bar-item w3-button w3-round w3-hover-red">romance</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/relationship.html" class="w3-bar-item w3-button w3-round w3-hover-red">relationship</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/rain.html" class="w3-bar-item w3-button w3-round w3-hover-red">rain</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/pandemic.html" class="w3-bar-item w3-button w3-round w3-hover-red">pandemic</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/oct.html" class="w3-bar-item w3-button w3-round w3-hover-red">oct</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/obsession.html" class="w3-bar-item w3-button w3-round w3-hover-red">obsession</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/nov.html" class="w3-bar-item w3-button w3-round w3-hover-red">nov</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/money.html" class="w3-bar-item w3-button w3-round w3-hover-red">money</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/mindfullness.html" class="w3-bar-item w3-button w3-round w3-hover-red">mindfullness</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/metro.html" class="w3-bar-item w3-button w3-round w3-hover-red">metro</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/may.html" class="w3-bar-item w3-button w3-round w3-hover-red">may</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/mar.html" class="w3-bar-item w3-button w3-round w3-hover-red">mar</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/lust.html" class="w3-bar-item w3-button w3-round w3-hover-red">lust</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/lullaby.html" class="w3-bar-item w3-button w3-round w3-hover-red">lullaby</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/loneliness.html" class="w3-bar-item w3-button w3-round w3-hover-red">loneliness</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/life.html" class="w3-bar-item w3-button w3-round w3-hover-red">life</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/kiyosaki.html" class="w3-bar-item w3-button w3-round w3-hover-red">kiyosaki</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/kids.html" class="w3-bar-item w3-button w3-round w3-hover-red">kids</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/kaavan.html" class="w3-bar-item w3-button w3-round w3-hover-red">kaavan</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/jun.html" class="w3-bar-item w3-button w3-round w3-hover-red">jun</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/jul.html" class="w3-bar-item w3-button w3-round w3-hover-red">jul</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/jan.html" class="w3-bar-item w3-button w3-round w3-hover-red">jan</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/inspired.html" class="w3-bar-item w3-button w3-round w3-hover-red">inspired</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/inspiration.html" class="w3-bar-item w3-button w3-round w3-hover-red">inspiration</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/income.html" class="w3-bar-item w3-button w3-round w3-hover-red">income</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/imagination.html" class="w3-bar-item w3-button w3-round w3-hover-red">imagination</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/humor.html" class="w3-bar-item w3-button w3-round w3-hover-red">humor</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/hope.html" class="w3-bar-item w3-button w3-round w3-hover-red">hope</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/helpless.html" class="w3-bar-item w3-button w3-round w3-hover-red">helpless</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/hair.html" class="w3-bar-item w3-button w3-round w3-hover-red">hair</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/gloom.html" class="w3-bar-item w3-button w3-round w3-hover-red">gloom</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/funny.html" class="w3-bar-item w3-button w3-round w3-hover-red">funny</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/fun.html" class="w3-bar-item w3-button w3-round w3-hover-red">fun</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/flirt.html" class="w3-bar-item w3-button w3-round w3-hover-red">flirt</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/fiction.html" class="w3-bar-item w3-button w3-round w3-hover-red">fiction</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/feb.html" class="w3-bar-item w3-button w3-round w3-hover-red">feb</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/farewell.html" class="w3-bar-item w3-button w3-round w3-hover-red">farewell</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/family.html" class="w3-bar-item w3-button w3-round w3-hover-red">family</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/events.html" class="w3-bar-item w3-button w3-round w3-hover-red">events</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/dog.html" class="w3-bar-item w3-button w3-round w3-hover-red">dog</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/depression.html" class="w3-bar-item w3-button w3-round w3-hover-red">depression</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/dec.html" class="w3-bar-item w3-button w3-round w3-hover-red">dec</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/corona.html" class="w3-bar-item w3-button w3-round w3-hover-red">corona</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/cartoons.html" class="w3-bar-item w3-button w3-round w3-hover-red">cartoons</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/breakup.html" class="w3-bar-item w3-button w3-round w3-hover-red">breakup</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/birthday.html" class="w3-bar-item w3-button w3-round w3-hover-red">birthday</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/aug.html" class="w3-bar-item w3-button w3-round w3-hover-red">aug</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/apartment.html" class="w3-bar-item w3-button w3-round w3-hover-red">apartment</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/2022.html" class="w3-bar-item w3-button w3-round w3-hover-red">2022</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/2021.html" class="w3-bar-item w3-button w3-round w3-hover-red">2021</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/2020.html" class="w3-bar-item w3-button w3-round w3-hover-red">2020</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/2019.html" class="w3-bar-item w3-button w3-round w3-hover-red">2019</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/2018.html" class="w3-bar-item w3-button w3-round w3-hover-red">2018</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/2016.html" class="w3-bar-item w3-button w3-round w3-hover-red">2016</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/2015.html" class="w3-bar-item w3-button w3-round w3-hover-red">2015</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/2012.html" class="w3-bar-item w3-button w3-round w3-hover-red">2012</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/2010.html" class="w3-bar-item w3-button w3-round w3-hover-red">2010</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/2009.html" class="w3-bar-item w3-button w3-round w3-hover-red">2009</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/2007.html" class="w3-bar-item w3-button w3-round w3-hover-red">2007</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/2006.html" class="w3-bar-item w3-button w3-round w3-hover-red">2006</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/2005.html" class="w3-bar-item w3-button w3-round w3-hover-red">2005</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/2004.html" class="w3-bar-item w3-button w3-round w3-hover-red">2004</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/1999.html" class="w3-bar-item w3-button w3-round w3-hover-red">1999</a>
-  
-            
-  
-            <a href="https://www.chasingarainbow.org/1996.html" class="w3-bar-item w3-button w3-round w3-hover-red">1996</a>
-  
-            
-          </span></p>
+              
+
+              <a href="https://www.chasingarainbow.org/virus.html" class="w3-bar-item w3-button w3-round w3-hover-red">virus</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/value.html" class="w3-bar-item w3-button w3-round w3-hover-red">value</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/time.html" class="w3-bar-item w3-button w3-round w3-hover-red">time</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/sep.html" class="w3-bar-item w3-button w3-round w3-hover-red">sep</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/self-realization.html" class="w3-bar-item w3-button w3-round w3-hover-red">self-realization</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/romance.html" class="w3-bar-item w3-button w3-round w3-hover-red">romance</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/relationship.html" class="w3-bar-item w3-button w3-round w3-hover-red">relationship</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/rain.html" class="w3-bar-item w3-button w3-round w3-hover-red">rain</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/pandemic.html" class="w3-bar-item w3-button w3-round w3-hover-red">pandemic</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/oct.html" class="w3-bar-item w3-button w3-round w3-hover-red">oct</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/obsession.html" class="w3-bar-item w3-button w3-round w3-hover-red">obsession</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/nov.html" class="w3-bar-item w3-button w3-round w3-hover-red">nov</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/money.html" class="w3-bar-item w3-button w3-round w3-hover-red">money</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/mindfullness.html" class="w3-bar-item w3-button w3-round w3-hover-red">mindfullness</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/metro.html" class="w3-bar-item w3-button w3-round w3-hover-red">metro</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/may.html" class="w3-bar-item w3-button w3-round w3-hover-red">may</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/mar.html" class="w3-bar-item w3-button w3-round w3-hover-red">mar</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/lust.html" class="w3-bar-item w3-button w3-round w3-hover-red">lust</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/lullaby.html" class="w3-bar-item w3-button w3-round w3-hover-red">lullaby</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/loneliness.html" class="w3-bar-item w3-button w3-round w3-hover-red">loneliness</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/life.html" class="w3-bar-item w3-button w3-round w3-hover-red">life</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/kiyosaki.html" class="w3-bar-item w3-button w3-round w3-hover-red">kiyosaki</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/kids.html" class="w3-bar-item w3-button w3-round w3-hover-red">kids</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/kaavan.html" class="w3-bar-item w3-button w3-round w3-hover-red">kaavan</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/jun.html" class="w3-bar-item w3-button w3-round w3-hover-red">jun</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/jul.html" class="w3-bar-item w3-button w3-round w3-hover-red">jul</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/jan.html" class="w3-bar-item w3-button w3-round w3-hover-red">jan</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/inspired.html" class="w3-bar-item w3-button w3-round w3-hover-red">inspired</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/inspiration.html" class="w3-bar-item w3-button w3-round w3-hover-red">inspiration</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/income.html" class="w3-bar-item w3-button w3-round w3-hover-red">income</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/imagination.html" class="w3-bar-item w3-button w3-round w3-hover-red">imagination</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/humor.html" class="w3-bar-item w3-button w3-round w3-hover-red">humor</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/hope.html" class="w3-bar-item w3-button w3-round w3-hover-red">hope</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/helpless.html" class="w3-bar-item w3-button w3-round w3-hover-red">helpless</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/hair.html" class="w3-bar-item w3-button w3-round w3-hover-red">hair</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/gloom.html" class="w3-bar-item w3-button w3-round w3-hover-red">gloom</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/funny.html" class="w3-bar-item w3-button w3-round w3-hover-red">funny</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/fun.html" class="w3-bar-item w3-button w3-round w3-hover-red">fun</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/flirt.html" class="w3-bar-item w3-button w3-round w3-hover-red">flirt</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/fiction.html" class="w3-bar-item w3-button w3-round w3-hover-red">fiction</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/feb.html" class="w3-bar-item w3-button w3-round w3-hover-red">feb</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/farewell.html" class="w3-bar-item w3-button w3-round w3-hover-red">farewell</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/family.html" class="w3-bar-item w3-button w3-round w3-hover-red">family</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/events.html" class="w3-bar-item w3-button w3-round w3-hover-red">events</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/dog.html" class="w3-bar-item w3-button w3-round w3-hover-red">dog</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/depression.html" class="w3-bar-item w3-button w3-round w3-hover-red">depression</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/dec.html" class="w3-bar-item w3-button w3-round w3-hover-red">dec</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/corona.html" class="w3-bar-item w3-button w3-round w3-hover-red">corona</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/cartoons.html" class="w3-bar-item w3-button w3-round w3-hover-red">cartoons</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/breakup.html" class="w3-bar-item w3-button w3-round w3-hover-red">breakup</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/birthday.html" class="w3-bar-item w3-button w3-round w3-hover-red">birthday</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/aug.html" class="w3-bar-item w3-button w3-round w3-hover-red">aug</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/apartment.html" class="w3-bar-item w3-button w3-round w3-hover-red">apartment</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/2022.html" class="w3-bar-item w3-button w3-round w3-hover-red">2022</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/2021.html" class="w3-bar-item w3-button w3-round w3-hover-red">2021</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/2020.html" class="w3-bar-item w3-button w3-round w3-hover-red">2020</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/2019.html" class="w3-bar-item w3-button w3-round w3-hover-red">2019</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/2018.html" class="w3-bar-item w3-button w3-round w3-hover-red">2018</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/2016.html" class="w3-bar-item w3-button w3-round w3-hover-red">2016</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/2015.html" class="w3-bar-item w3-button w3-round w3-hover-red">2015</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/2012.html" class="w3-bar-item w3-button w3-round w3-hover-red">2012</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/2010.html" class="w3-bar-item w3-button w3-round w3-hover-red">2010</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/2009.html" class="w3-bar-item w3-button w3-round w3-hover-red">2009</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/2007.html" class="w3-bar-item w3-button w3-round w3-hover-red">2007</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/2006.html" class="w3-bar-item w3-button w3-round w3-hover-red">2006</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/2005.html" class="w3-bar-item w3-button w3-round w3-hover-red">2005</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/2004.html" class="w3-bar-item w3-button w3-round w3-hover-red">2004</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/1999.html" class="w3-bar-item w3-button w3-round w3-hover-red">1999</a>
+
+              
+
+              <a href="https://www.chasingarainbow.org/1996.html" class="w3-bar-item w3-button w3-round w3-hover-red">1996</a>
+
+              
+            </span></p>
         </div>
-        
+
         <div class="w3-col m3 l3">
           <i class="fa fa-twitter w3-red w3-padding-small w3-round-xlarge"></i>
           <h3>Follow Me</h3>
           <p><span class="w3-bar">
-            <a href="https://twitter.com/omgitssubu"
-              class="w3-bar-item w3-button w3-round w3-hover-red">twitter..</a>
-          </span></p>
+              <a href="https://twitter.com/omgitssubu"
+                class="w3-bar-item w3-button w3-round w3-hover-red">twitter..</a>
+            </span></p>
         </div>
       </div>
     </div>
   </section>
 
-    <!-- FOOTER -->
-    <footer class="w3-black w3-padding-xlarge w3-center">
-      <p>
-        all rights reserved. Lumos AI LLC, 2022 </h3>&nbsp; &nbsp; <i class="fa fa-envelope-o w3-red w3-padding-small w3-round-xlarge"></i><a
-          href="mailto:subu@lumosai.org?subject=Mail from our Website">send comments and questions to Subu</a> &nbsp; &nbsp; version 1.03 &nbsp; last updated: Mar 2022
-      </p>
-    </footer>
+  <!-- FOOTER -->
+  <footer class="w3-black w3-padding-xlarge w3-center">
+    <p>
+      all rights reserved. Lumos AI LLC, 2022 </h3>&nbsp; &nbsp; <i
+        class="fa fa-envelope-o w3-red w3-padding-small w3-round-xlarge"></i><a
+        href="mailto:subu@lumosai.org?subject=Mail from our Website">send comments and
+        questions to Subu</a> &nbsp; &nbsp; version 1.03 &nbsp; last
+      updated: Mar 2022
+    </p>
+  </footer>
 
- 
+
 
 
 </body>
